@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".getWithListAndQuery.GetWithListAndQueryActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter user post"
+        android:id="@+id/etUserPost"
+        android:layout_margin="20sp"
+        android:padding="10sp"/>
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        style="@style/buttonStyle"
+        android:text="Search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"/>
+</LinearLayout>
